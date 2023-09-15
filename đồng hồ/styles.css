@@ -1,0 +1,170 @@
+#main {
+  margin: 0px 40px;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Căn cỡ cho phần tử logo và bars */
+  align-items: center; /* Canh giữa phần tử theo chiều dọc */
+}
+
+#header .logo {  
+  font-family: 'Bungee Shade', cursive;
+  width: 16%;
+  display: inline-block;
+  background-color:rgba(255, 42, 0, 0.8); 
+  text-align: center;
+  border: 2px solid black;
+  font-size: 32px;  
+}
+
+#header .logo:hover {
+}
+
+#header .search-btn {
+  display: inline-block;
+  float: right;
+  border-radius: 10px;
+  line-height: 90px;
+  font-size: 40px;
+  background-color: #eee;
+  width: 30%;
+  transform: translateY(16%);
+}
+
+#header .search-btn:hover {
+  cursor: text;
+} 
+
+.search-btn i {
+  color: #656363;
+  float: right; 
+  margin: 12px;
+}
+
+#header .bars {
+  display: none;
+}
+
+#timeSection .place-content {
+  font-size: 44px;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
+  font-weight: bolder;
+  margin: 44px 0px 32px 0px;
+  opacity: 0.8;
+  color: black;
+}
+ 
+#timeSection .place {
+  display: inline-block;
+  border-bottom: 2px solid #2f2b2b;
+  padding: 0px 0px;
+}
+
+#timeSection .clock {
+  -webkit-user-select: none;
+  user-select: none;
+  text-align: center;
+  width: 100%;
+  line-height: 200px;
+  position: relative;
+}
+
+#timeSection .clock .current-time {
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
+  display: block;
+  font-size: 280px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  font-family: sans-serif;
+  color: rgba(32, 28, 30, 0.9);
+  pointer-events: none;
+}
+
+#timeSection .date {
+  width: 100%;
+  display: inline;
+}
+
+.date .current-date {
+  margin: 60px -4px 8px 0px;
+  float: right;
+  display: block;
+  font-size: 56px;
+  font-family:'Lucida Sans Unicode';
+  letter-spacing: 0px;
+  word-spacing: -8px;
+  font-weight: 50;
+  color: rgba(44, 39, 42, 0.8);
+}
+
+.top-cities-time {
+  width: 100%;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.top-cities-time #cities {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.top-cities-time #cities > li {
+  list-style-type: none;
+  border: 1px solid #eee;
+  background-color: #eee;
+  margin: 0 0 10px 14px;
+  padding: 20px 24px;
+  position: relative;
+  list-style: none;
+  display: block;
+  line-height: 28px;
+  font-weight: 900;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
+  text-transform: capitalize;
+}
+
+#cities .mon1, #cities .mon2, #cities .mon3, #cities .mon4, #cities .mon5 {
+  float: right;
+}
+
+.top-cities-time #cities >li:hover {
+  border-color: #999;
+  background: #999;
+  color: #fff;
+  cursor: pointer;
+}
+
+#footer {
+  margin: 44px -48px 0px -48px;
+  background-color: #75a;
+ 
+  color: #fff;
+  padding: 160px 5%;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
+}
+
+  #footer .quote {
+  font-size: 40px;
+  font-weight: 1000;
+  line-height: 50px;
+  text-align: center;
+  direction: ltr;/* thứ tự (1,2,3,4 hoặc 4,3,2,1) */
+}
+
+#footer .author { 
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/* .hidden {
+  display: none 
+} */
+
+/* inline, inline block, space và không space, clear */
