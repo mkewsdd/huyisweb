@@ -11,14 +11,89 @@
 }
 
 /* Tablet static table */
-@media (min-width: 48em) and (max-width: 50em){
+/* orientation: portrait với màn hình tĩnh */
+@media (min-width: 46.25em) and (max-width:  64.9375em) and (orientation: portrait){ 
+    #main {
+        margin: -8px 28px -8px 28px;
+    }
+ 
+    #header {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; /* Căn cỡ cho phần tử logo và bars */
+        align-items: center; /* Canh giữa phần tử theo chiều dọc */
+    }
+ 
+    #header .logo {
+        width: 20%;
+        font-size: 20px;
+    }
+    #header .logo:active {
+        opacity: 0.7;
+        cursor: none;
+    }
+     
+    #header .search-btn {
+        margin-left: auto;
+        order: 2;
+        transform: none;
+    }
+       
+    .search-btn i {
+        float: left;
+        font-size: 24px;
+    }
+ 
+    #header .bars {
+        display: inline-block;
+        order: 3;
+        margin-left: 5%;
+    }
+ 
+    #header .bars >i{
+        font-size: 32px;
+        text-align: center;
+        color: #656363;
+    }
+ 
+    #header .bars:active {
+        opacity: 0.4;
+    }
+ 
+    #timeSection .place-content {
+        font-size: 40px;
+    }
+     
+    #timeSection .clock {
+        margin: -28px 0px;
+    }
+
     #timeSection .clock .current-time {
-        font-size: 60px;
+        font-size: 130px;
+    }
+
+    #timeSection .date {
+        margin: -20px 0px;
+    }
+
+    #timeSection .date .current-date {
+        font-size: 40px;
+        margin: 16px 0px;
+    }
+
+    .top-cities-time {
+        margin-top: -12px;
+    }
+    .top-cities-time #cities > li {
+        font-size: 20px;
+        padding: 18px 10px;
     }
 }
 
 /* Tablet rotated table */
-@media (min-width: 46.25em) and (max-width: 64.9375em) {
+/* orientation: landscape với màn hình xoay ngang */
+@media (min-width: 46.25em) and (max-width: 64.9375em) and (orientation: landscape) {
     #main {
        margin: -8px 28px -8px 28px;
     }
@@ -71,11 +146,264 @@
         font-size: 40px;
     }
     
+    #timeSection .clock {
+        margin: -16px 0px;
+    }
+
     #timeSection .clock .current-time {
-        font-size: 160px;
+        font-size: 170px;
+    }
+
+    #timeSection .date {
+        margin: -36px 0px 0px 0px;
+    }
+
+    .top-cities-time #cities >li:hover {
+        opacity: 0.6;
     }
 }
 
+/* Tablet rotated table */
+/* orientation: landscape với màn hình xoay ngang */
+@media (min-width: 46.25em) and (max-width: 64.9375em) and (orientation: landscape) {
+    #main {
+       margin: -8px 28px -8px 28px;
+    }
+
+    #header {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; /* Căn cỡ cho phần tử logo và bars */
+        align-items: center; /* Canh giữa phần tử theo chiều dọc */
+    }
+
+    #header .logo {
+        width: 20%;
+        font-size: 20px;
+    }
+    #header .logo:active {
+        opacity: 0.7;
+        cursor: none;
+    }
+    
+    #header .search-btn {
+        margin-left: auto;
+        order: 2;
+        transform: none;
+    }
+      
+    .search-btn i {
+        float: left;
+        font-size: 24px;
+    }
+
+    #header .bars {
+        display: inline-block;
+        order: 3;
+        margin-left: 5%;
+    }
+
+    #header .bars >i{
+        font-size: 32px;
+        text-align: center;
+        color: #656363;
+    }
+
+    #header .bars:active {
+        opacity: 0.4;
+    }
+
+    #timeSection .place-content {
+        font-size: 40px;
+    }
+    
+    #timeSection .clock {
+        margin: -16px 0px;
+    }
+
+    #timeSection .clock .current-time {
+        font-size: 170px;
+    }
+
+    #timeSection .date {
+        margin: -36px 0px 0px 0px;
+    }
+
+    .top-cities-time #cities >li:hover {
+        opacity: 0.6;
+    }
+}
+
+/* Small Tablet */
+@media (max-width: 50em) and (min-width: 37.5em){
+    #main {
+        margin: -8px 28px -8px 28px;
+    }
+ 
+    #header {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; /* Căn cỡ cho phần tử logo và bars */
+        align-items: center; /* Canh giữa phần tử theo chiều dọc */
+    }
+ 
+    #header .logo {
+        width: 20%;
+        font-size: 20px;
+    }
+    #header .logo:active {
+        opacity: 0.7;
+        cursor: none;
+    }
+     
+    #header .search-btn {
+        margin-left: auto;
+        order: 2;
+        transform: none;
+    }
+       
+    .search-btn i {
+        float: left;
+        font-size: 24px;
+    }
+ 
+    #header .bars {
+        display: inline-block;
+        order: 3;
+        margin-left: 5%;
+    }
+ 
+    #header .bars >i{
+        font-size: 32px;
+        text-align: center;
+        color: #656363;
+    }
+ 
+    #header .bars:active {
+        opacity: 0.4;
+    }
+ 
+    #timeSection .place-content {
+        font-size: 40px;
+    }
+     
+    #timeSection .clock {
+        margin: -28px 0px;
+    }
+
+    #timeSection .clock .current-time {
+        font-size: 100px;
+    }
+
+    #timeSection .date {
+        margin: -20px 0px;
+    }
+
+    #timeSection .date .current-date {
+        font-size: 40px;
+        margin: 16px 0px;
+    }
+
+    .top-cities-time {
+        margin-top: -12px;
+    }
+    .top-cities-time #cities > li {
+        font-size: 20px;
+        padding: 18px 10px;
+    }
+
+    .top-cities-time #cities >li:hover {
+        opacity: 0.6;
+      }
+}
+
+@media (max-width: 50em) and (min-width: 37.5em) and (orientation: portrait){
+    #timeSection .place-content {
+        font-size: 31px;
+    }
+
+    #timeSection .date .current-date {
+        font-size: 32px;
+    }
+
+    .top-cities-time #cities > li {
+        font-size: 16px;
+        padding: 8px 2px;
+    }
+
+    .top-cities-time #cities >li:hover {
+        opacity: 0.6;
+      }
+}
+
 /* Mobile */
-@media (max-width:46.1875em){
+ @media (max-width: 46.1875em) and (orientation: portrait){ /*orientation: landscape */
+    #main {
+        margin: -8px 12px -8px 12px;
+    }
+ 
+    #header .logo {
+        padding: 4px 12px;
+        width: 20%;
+        font-size: 16px;
+    }
+    
+    #header .logo:active {
+        opacity: 0.7;
+        cursor: none;
+    }
+     
+    #header .search-btn {
+        margin-left: auto;
+        order: 2;
+        transform: none;
+        background-color: #fff;
+    }
+       
+    .search-btn i {
+        float: right;
+        font-size: 24px;
+    }
+ 
+    #header .bars {
+        display: inline-block;
+        order: 3;
+        margin-left: 5%;
+    }
+ 
+    #header .bars >i{
+        font-size: 32px;
+        text-align: center;
+        color: #656363;
+    }
+ 
+    #header .bars:active {
+        opacity: 0.4;
+    }
+ 
+    #timeSection .place-content {
+        font-size: 19px;
+    }
+     
+    #timeSection .clock {
+        margin: -76px 0px;
+    }
+
+    #timeSection .clock .current-time {
+        font-size: 58px;
+    }
+
+    #timeSection .date {
+        margin: -12px 0px;
+    }
+
+    #timeSection .date .current-date {
+        font-weight: 700;
+        word-spacing: 0.5px;
+        font-size: 18px;
+        margin: 16px 0px;
+    }
+
 }
