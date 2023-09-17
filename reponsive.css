@@ -1,0 +1,83 @@
+/* PC */
+@media only screen and (min-width: 64.01em){
+    #header .logo:hover {
+        cursor: pointer;
+        opacity: 0.7;
+        font-weight: 800;
+        font-size: 24px;
+        padding: 8px 48px;
+        transition-duration: 0.4s;
+      }
+}
+
+/* Tablet static table */
+@media (min-width: 48em) and (max-width: 50em){
+    #timeSection .clock .current-time {
+        font-size: 60px;
+    }
+}
+
+/* Tablet rotated table */
+@media (min-width: 46.25em) and (max-width: 64.9375em) {
+    #main {
+       margin: -8px 28px -8px 28px;
+    }
+
+    #header {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; /* Căn cỡ cho phần tử logo và bars */
+        align-items: center; /* Canh giữa phần tử theo chiều dọc */
+    }
+
+    #header .logo { 
+        width: 20%;
+        font-size: 20px;
+    }
+    #header .logo:active {
+        opacity: 0.7;
+        cursor: none;
+    }
+    
+    #header .search-btn {
+        margin-left: auto;
+        order: 2;
+        transform: none;
+    }
+      
+    .search-btn i {
+        float: left;
+        font-size: 24px;
+    }
+
+    #header .bars {
+        display: inline-block;
+        order: 3;
+        margin-left: 5%;
+    }
+
+    #header .bars >i{
+        font-size: 32px;
+        text-align: center;
+        color: #656363;
+    }
+
+    #header .bars:active {
+        opacity: 0.4;
+    }
+
+    #timeSection .place-content {
+        font-size: 40px;
+    }
+    
+
+      
+    #timeSection .clock .current-time {
+        font-size: 180px;
+    }
+}
+
+/* Mobile */
+@media (max-width:46.1875em){
+}
