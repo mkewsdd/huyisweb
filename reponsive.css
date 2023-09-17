@@ -31,8 +31,7 @@
         align-items: center; /* Canh giữa phần tử theo chiều dọc */
     }
 
-    #header .logo { 
-        display: none;
+    #header .logo {
         width: 20%;
         font-size: 20px;
     }
