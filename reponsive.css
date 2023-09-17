@@ -32,6 +32,7 @@
     }
 
     #header .logo { 
+        display: none;
         width: 20%;
         font-size: 20px;
     }
@@ -71,10 +72,8 @@
         font-size: 40px;
     }
     
-
-      
     #timeSection .clock .current-time {
-        font-size: 180px;
+        font-size: 160px;
     }
 }
 
